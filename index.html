@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <body>
+        <div id="Infinite scroll">
+            <div>
+     <script>
+       for( let i = 0; i < 50; i++ )
+         document.write("<div>ПЕРЕМОГА</div>");
+            window.addEventListener("scroll", function(){
+                var block = document.getElementById('Infinite scroll');
+                if(window.pageYOffset + window.innerHeight >= block.offsetHeight)
+                {
+                    block.innerHTML = block.innerHTML + "<div>ПЕРЕМОГА</div>";
+                }
+            });
+    </script>
+    </body>
+</html>
